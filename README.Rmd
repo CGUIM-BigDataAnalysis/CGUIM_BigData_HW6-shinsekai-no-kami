@@ -3,20 +3,6 @@ title: "男子網球勝率因子分析"
 output: github_document
 ---
 
-
-## 作業說明 （繳交時請直接刪除這個章節）
-
-作業目的：期末專題暖身
-
-依下列指示，完成期末分析專題作業規劃：
-
-- 訂出分析問題，並將R Markdown的一級標題(第一行的title:)中的"長庚大學 大數據分析方法 作業六"取代為期末專題的分析問題，並在分析議題背景前加上組員姓名 (`10pt`)
-- 分析議題背景 (`10pt`) 與動機 (`10pt`)
-- 資料說明 (`10pt`) 與 載入 (`10pt`)
-- 資料處理與清洗 (`10pt`) 說明 (`10pt`)
-- 對資料們進行探索式資料分析，圖文並茂佳!(`20pt`)
-- 期末專題分析規劃與假設 (`10pt`)
-
 ## 簡名浩、楊博翰分析議題背景
 網球堪稱世界三大運動之一，也有紳士運動之稱，其起源於中世紀晚期的法國宮廷遊戲；而現代網球規則則是由19世紀一位英國少校所發明。
 一場網球比賽大致由分、局及盤三要素組成，參與人數可以是2人或4人分為兩方，進行方式為雙方格網持拍相互將球回及過網，在允許球落地彈跳一次的前提下，首先令對方無法做出有效回擊球者便獲得
@@ -25,7 +11,7 @@ output: github_document
 在早期，大滿貫比賽皆效仿溫布頓在草地上舉行，隨後逐漸發展出自己的特色。現在按場地材質可將場地分為草地、紅土、硬地及室內地毯等。
 
 ## 分析動機
-分析動機分析動機
+此次分析主要分析勝率與球員其他數據之間的關係。網球是屬於紳士的運動，不如其他主流球類運動如足球、橄欖球或籃球等需要肢體接觸，除了顯得有些野蠻之外，也時常能發生衝突爭議。網球的競爭中，雙方揖讓而升，網子隔開雙方不會有衝突的發生，純粹是力與智的較量，堪稱最高尚的運動之一，深得朕心，是以以此為題分析，一方面對於網球有一定的背景知識了解，另一方面分析起來也比較開心，不會只為滿足老師虛應故事。
 
 ## 使用資料
 GitHub Jeffsackmann repository：tennis_atp：
@@ -91,33 +77,45 @@ atp_matches_2016 <- read_csv("D:/atp_datas/atp_matches_2016.csv")
 atp_matches_2017 <- read_csv("D:/atp_datas/atp_matches_2017.csv")
 atp_players <- read_csv("D:/atp_datas/atp_players.csv", 
     col_names = FALSE)
-atp_rankings_70s <- read_csv("D:/atp_datas/atp_rankings_70s.csv", 
-    col_names = FALSE)
-atp_rankings_80s <- read_csv("D:/atp_datas/atp_rankings_80s.csv", 
-    col_names = FALSE)
-atp_rankings_90s <- read_csv("D:/atp_datas/atp_rankings_90s.csv", 
-    col_names = FALSE)
-atp_rankings_00s <- read_csv("D:/atp_datas/atp_rankings_00s.csv", 
-    col_names = FALSE)
-atp_rankings_10s <- read_csv("D:/atp_datas/atp_rankings_10s.csv", 
-    col_names = FALSE)
-atp_rankings_current <- read_csv("D:/atp_datas/atp_rankings_current.csv", 
-    col_names = FALSE)
 ```
 
 ## 資料處理與清洗
-說明處理資料的步驟
-
-處理資料
+將歷年比賽資料合成一個單一的矩陣
+後在位包含欄位名稱的資料加上欄位名稱方便操作
+其餘資料皆符合Tidy data要求因此不再處理
 ```{r}
 #這是R Code Chunk
+atp_matches <- rbind(atp_matches_1968, atp_matches_1969, atp_matches_1970, atp_matches_1971, atp_matches_1972, atp_matches_1973, atp_matches_1974, atp_matches_1975, atp_matches_1976, atp_matches_1977, atp_matches_1978, atp_matches_1979, atp_matches_1980, atp_matches_1981, atp_matches_1982, atp_matches_1983, atp_matches_1984, atp_matches_1985, atp_matches_1986, atp_matches_1987, atp_matches_1988, atp_matches_1989, atp_matches_1990, atp_matches_1991, atp_matches_1992, atp_matches_1993, atp_matches_1994, atp_matches_1995, atp_matches_1996, atp_matches_1997, atp_matches_1998, atp_matches_1999, atp_matches_2000, atp_matches_2001, atp_matches_2002, atp_matches_2003, atp_matches_2004, atp_matches_2005, atp_matches_2006, atp_matches_2007, atp_matches_2008, atp_matches_2009, atp_matches_2010, atp_matches_2011, atp_matches_2012, atp_matches_2013, atp_matches_2014, atp_matches_2015, atp_matches_2016, atp_matches_2017)
+
+names(atp_players) <- c("player_id", "first_name", "last_name", "player_hand", "date_of_birth", "player_ioc")
 ```
 
 ## 探索式資料分析
-圖文並茂圖文並茂
 ```{r}
 #這是R Code Chunk
+#install.packages("data.table")
+#首先用ageAnalysis呈現各等級賽事奪冠年齡分析，由表可知平均奪冠年齡、最老冠軍及最年輕冠軍和冠軍們年齡標準差，如下；
+library(data.table)
+ageAnalysis <- data.table(atp_matches)
+ageAnalysis <- ageAnalysis[round=="F"&!is.na(winner_age), .(Mean = mean(winner_age), Max = max(winner_age), Min = min(winner_age), SD = sd(winner_age)), by = tourney_level]
+ageAnalysis
+
+#用列連表呈現國家和持拍手的關係，共分為雙手皆可持拍、右手持拍、左手持拍及未知，可看出一國持拍手組成比例；
+mtTable <- table(atp_players$player_ioc, atp_players$player_hand)
+prop.table(mtTable, margin = 1)
+
+#觀察一下相關性，下段呈現發出Ace球數量與球員身高的關係，有著正向的關係；
+cor(as.numeric(atp_matches[!is.na(atp_matches$w_ace)&!is.na(atp_matches$winner_ht),"w_ace"][[1]]), atp_matches[!is.na(atp_matches$w_ace)&!is.na(atp_matches$winner_ht), "winner_ht"])
+cor(as.numeric(atp_matches[!is.na(atp_matches$l_ace)&!is.na(atp_matches$loser_ht),"l_ace"][[1]]), atp_matches[!is.na(atp_matches$l_ace)&!is.na(atp_matches$loser_ht), "loser_ht"])
+
+#下段呈現發出Ace球數量與發出雙發失誤數量的關係，也有著正向的關係；
+cor(as.numeric(atp_matches[!is.na(atp_matches$w_ace)&!is.na(atp_matches$w_df),"w_ace"][[1]]), as.numeric(atp_matches[!is.na(atp_matches$w_ace)&!is.na(atp_matches$w_df), "w_df"][[1]]))
+cor(as.numeric(atp_matches[!is.na(atp_matches$l_ace)&!is.na(atp_matches$l_df),"l_ace"][[1]]), as.numeric(atp_matches[!is.na(atp_matches$l_ace)&!is.na(atp_matches$l_df), "l_df"][[1]]))
 ```
 
 ## 期末專題分析規劃
-期末專題要做XXOOO交叉分析
+在這次初期的探索式資料分析中，我們知道了一些有趣的事實，包括各個等級賽事的冠軍與年齡的平均數、標準差，還有Ace球與雙發失誤的相關性。接下來我們想研究更全面的網球賽事數據，包括：以國家及慣用手為分組，研究網球員的勝率、擅長場地、身高等資訊，企圖研究其中的關聯性，並且利用世界地圖加上密度圖來標示研究成果。
+
+我們假設：
+1. 國家與身高有強烈的正相關。 
+2. 慣用左手的網球員雖然數量比慣用右手的網球員少，但平均勝率會比較高。 3. 受到各個國家生長環境的影響，各個國家出身的選手可能會有特定擅長的場地類型。
