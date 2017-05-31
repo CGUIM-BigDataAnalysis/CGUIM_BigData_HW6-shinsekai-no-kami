@@ -1,0 +1,1263 @@
+"0","#這是R Code Chunk"
+"0","library(readr)"
+"2","Warning message:
+"
+"2","In strsplit(code, ""\n"", fixed = TRUE) :"
+"2","
+ "
+"2"," input string 1 is invalid in this locale
+"
+"0","atp_matches_1968 <- read_csv(""D:/atp_datas/atp_matches_1968.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1969 <- read_csv(""D:/atp_datas/atp_matches_1969.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1970 <- read_csv(""D:/atp_datas/atp_matches_1970.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1971 <- read_csv(""D:/atp_datas/atp_matches_1971.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1972 <- read_csv(""D:/atp_datas/atp_matches_1972.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1973 <- read_csv(""D:/atp_datas/atp_matches_1973.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1974 <- read_csv(""D:/atp_datas/atp_matches_1974.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1975 <- read_csv(""D:/atp_datas/atp_matches_1975.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1976 <- read_csv(""D:/atp_datas/atp_matches_1976.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1977 <- read_csv(""D:/atp_datas/atp_matches_1977.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1978 <- read_csv(""D:/atp_datas/atp_matches_1978.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1979 <- read_csv(""D:/atp_datas/atp_matches_1979.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1980 <- read_csv(""D:/atp_datas/atp_matches_1980.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1981 <- read_csv(""D:/atp_datas/atp_matches_1981.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1982 <- read_csv(""D:/atp_datas/atp_matches_1982.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1983 <- read_csv(""D:/atp_datas/atp_matches_1983.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1984 <- read_csv(""D:/atp_datas/atp_matches_1984.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1985 <- read_csv(""D:/atp_datas/atp_matches_1985.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1986 <- read_csv(""D:/atp_datas/atp_matches_1986.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1987 <- read_csv(""D:/atp_datas/atp_matches_1987.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1988 <- read_csv(""D:/atp_datas/atp_matches_1988.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1989 <- read_csv(""D:/atp_datas/atp_matches_1989.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1990 <- read_csv(""D:/atp_datas/atp_matches_1990.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_character(),
+  draw_size = col_integer(),
+  tourney_date = col_integer(),
+  winner_id = col_integer(),
+  winner_seed = col_integer(),
+  winner_ht = col_integer(),
+  winner_age = col_double(),
+  winner_rank = col_integer(),
+  winner_rank_points = col_integer(),
+  loser_id = col_integer(),
+  loser_seed = col_integer(),
+  loser_ht = col_integer(),
+  loser_age = col_double(),
+  loser_rank = col_integer(),
+  loser_rank_points = col_integer(),
+  best_of = col_integer()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1991 <- read_csv(""D:/atp_datas/atp_matches_1991.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1992 <- read_csv(""D:/atp_datas/atp_matches_1992.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1993 <- read_csv(""D:/atp_datas/atp_matches_1993.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1994 <- read_csv(""D:/atp_datas/atp_matches_1994.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1995 <- read_csv(""D:/atp_datas/atp_matches_1995.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1996 <- read_csv(""D:/atp_datas/atp_matches_1996.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1997 <- read_csv(""D:/atp_datas/atp_matches_1997.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1998 <- read_csv(""D:/atp_datas/atp_matches_1998.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_1999 <- read_csv(""D:/atp_datas/atp_matches_1999.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2000 <- read_csv(""D:/atp_datas/atp_matches_2000.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2001 <- read_csv(""D:/atp_datas/atp_matches_2001.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2002 <- read_csv(""D:/atp_datas/atp_matches_2002.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2003 <- read_csv(""D:/atp_datas/atp_matches_2003.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2004 <- read_csv(""D:/atp_datas/atp_matches_2004.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2005 <- read_csv(""D:/atp_datas/atp_matches_2005.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2006 <- read_csv(""D:/atp_datas/atp_matches_2006.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2007 <- read_csv(""D:/atp_datas/atp_matches_2007.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2008 <- read_csv(""D:/atp_datas/atp_matches_2008.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2009 <- read_csv(""D:/atp_datas/atp_matches_2009.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2010 <- read_csv(""D:/atp_datas/atp_matches_2010.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2011 <- read_csv(""D:/atp_datas/atp_matches_2011.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2012 <- read_csv(""D:/atp_datas/atp_matches_2012.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  match_num = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2013 <- read_csv(""D:/atp_datas/atp_matches_2013.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2014 <- read_csv(""D:/atp_datas/atp_matches_2014.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2015 <- read_csv(""D:/atp_datas/atp_matches_2015.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2016 <- read_csv(""D:/atp_datas/atp_matches_2016.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_matches_2017 <- read_csv(""D:/atp_datas/atp_matches_2017.csv"")"
+"2","Parsed with column specification:
+cols(
+  .default = col_integer(),
+  tourney_id = col_character(),
+  tourney_name = col_character(),
+  surface = col_character(),
+  tourney_level = col_character(),
+  winner_entry = col_character(),
+  winner_name = col_character(),
+  winner_hand = col_character(),
+  winner_ioc = col_character(),
+  winner_age = col_double(),
+  loser_entry = col_character(),
+  loser_name = col_character(),
+  loser_hand = col_character(),
+  loser_ioc = col_character(),
+  loser_age = col_double(),
+  score = col_character(),
+  round = col_character()
+)
+"
+"2","See spec(...) for full column specifications.
+"
+"0","atp_players <- read_csv(""D:/atp_datas/atp_players.csv"", "
+"0","    col_names = FALSE)"
+"2","Parsed with column specification:
+cols(
+  X1 = col_integer(),
+  X2 = col_character(),
+  X3 = col_character(),
+  X4 = col_character(),
+  X5 = col_integer(),
+  X6 = col_character()
+)
+"
+"0","atp_rankings_70s <- read_csv(""D:/atp_datas/atp_rankings_70s.csv"", "
+"0","    col_names = FALSE)"
+"2","Parsed with column specification:
+cols(
+  X1 = col_integer(),
+  X2 = col_integer(),
+  X3 = col_integer(),
+  X4 = col_integer()
+)
+"
+"0","atp_rankings_80s <- read_csv(""D:/atp_datas/atp_rankings_80s.csv"", "
+"0","    col_names = FALSE)"
+"2","Parsed with column specification:
+cols(
+  X1 = col_integer(),
+  X2 = col_integer(),
+  X3 = col_integer(),
+  X4 = col_integer()
+)
+"
+"0","atp_rankings_90s <- read_csv(""D:/atp_datas/atp_rankings_90s.csv"", "
+"0","    col_names = FALSE)"
+"2","Parsed with column specification:
+cols(
+  X1 = col_integer(),
+  X2 = col_integer(),
+  X3 = col_integer(),
+  X4 = col_integer()
+)
+"
+"0","atp_rankings_00s <- read_csv(""D:/atp_datas/atp_rankings_00s.csv"", "
+"0","    col_names = FALSE)"
+"2","Parsed with column specification:
+cols(
+  X1 = col_integer(),
+  X2 = col_integer(),
+  X3 = col_integer(),
+  X4 = col_integer()
+)
+"
+"2","1 parsing failure.
+row # A tibble: 1 x 5 col      row   col   expected                            actual expected    <int> <chr>      <chr>                             <chr> actual 1 585874    X4 an integer ""bioTableWrap bioTableWrapAlt\"">"" file # ... with 1 more variables: file <chr>
+"
+"0","atp_rankings_10s <- read_csv(""D:/atp_datas/atp_rankings_10s.csv"", "
+"0","    col_names = FALSE)"
+"2","Parsed with column specification:
+cols(
+  X1 = col_integer(),
+  X2 = col_integer(),
+  X3 = col_integer(),
+  X4 = col_integer()
+)
+"
+"0","atp_rankings_current <- read_csv(""D:/atp_datas/atp_rankings_current.csv"", "
+"0","    col_names = FALSE)"
+"2","Parsed with column specification:
+cols(
+  X1 = col_integer(),
+  X2 = col_integer(),
+  X3 = col_integer(),
+  X4 = col_integer()
+)
+"
